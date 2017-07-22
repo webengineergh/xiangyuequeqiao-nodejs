@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>相约鹊桥</title>
+   <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <!-- Add custom CSS here -->
+   <link href="css/slidefolio.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Area -->
+<div id="top" class="header">
+   <div class="vert-text">
+      <img class="img-rounded" alt="Company Logo" src="img/others/logo.jpg"/>
+      <h2><em>相约鹊桥</em></h2>
+      <br>
+      <a href="#about" class="btn btn-top">更多</a>
+   </div>
+</div>
+<!-- /Header Area -->
+<div id="nav">
+   <!-- Navigation -->
+   <nav class="navbar navbar-new" role="navigation">
+      <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
+               <!--<span class="sr-only">Toggle navigation</span>-->
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <!--<a href="#" class="navbar-brand">Slidefolio</a>-->
+         </div>
+         <div class="collapse navbar-collapse" id="mobilemenu">
+            <ul class="nav navbar-nav navbar-right text-center">
+               <li><a href="#top"><i class="glyphicon glyphicon-home"></i>&nbsp;鹊桥主页</a></li>
+               <li><a href="#about"><i class="glyphicon glyphicon-flag"></i>&nbsp;公司简介</a></li>
+               <li><a href="#portfolio"><i class="glyphicon glyphicon-th-list"></i>&nbsp;鹊桥作品</a></li>
+               <li><a href="#services"><i class="glyphicon glyphicon-picture"></i>&nbsp;鹊桥客照</a></li>
+               <li><a href="#contact"><i class="glyphicon glyphicon-envelope"></i>&nbsp;顾客留言</a></li>
+               <li><a id="toGift" data-toggle="modal" data-target="#gift"><i class="glyphicon glyphicon-gift"></i>&nbsp;进店豪礼</a></li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </div>
+   </nav>
+
+   <!-- /Navigation -->
+</div>
+<!-- About -->
+<div id="about" class="about_us">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8 col-md-offset-2 ">
+            <h2 class="text-center">相约鹊桥</h2>
+
+            <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相约鹊桥婚纱摄影创立于2015年，致力于为每一对新人提供专业的婚纱摄影和浪漫婚礼仪式服务，时尚的设计走向和创新思维的摄影理念，全面高端、个性化的配套设施，国际最新流行品牌婚纱礼服，全方位的细致周到的贴身服务，彰显尊荣，带给即将结婚新人们以尊贵的高档享受和品味。</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="portfolio" class="portfolio">
+   <div class="container">
+      <div class="row push50">
+         <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>婚纱风格</h2>
+
+            <h3 class="h3">
+               <span class="filter label label-default" data-filter="all">全部</span>
+               <span class="filter label label-default" data-filter="city">城市恋人</span>
+               <span class="filter label label-default" data-filter="flower">花海之都</span>
+               <span class="filter label label-default" data-filter="summer">相约你我</span>
+            </h3>
+            <hr>
+         </div>
+      </div>
+      <div class="row">
+         <div class="gallery">
+            <ul id="Grid" class="gcontainer">
+
+            </ul>
+
+            <!--gift-->
+
+            <div class="modal fade" id="gift" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-center">进店豪礼</h4>
+                     </div>
+                     <div class="modal-body">
+                        <form action="contact" class="form-horizontal">
+                           <div class="form-group">
+                              <p>尊敬的顾客：您好！欢迎光顾相约鹊桥婚纱摄影。请在下方填写您的姓名及联系电话，凭此信息进店可免费拍摄个人写真两张！（我们会保证您的信息绝对保密）</p>
+                           </div>
+                           <div class="form-group">
+                              <label for="uname">顾客姓名</label>
+                              <input type="text" class="form-control" id="uname" placeholder="请输入您的姓名">
+                              <h4 id="giftUname" style="color:#f00"></h4>
+                           </div>
+                           <div class="form-group">
+                              <label for="telphone">联系电话</label>
+                              <input type="text" class="form-control" id="telphone" placeholder="请输入手机号码">
+                              <h4 id="giftTel" style="color:#f00"></h4>
+                           </div>
+                           <button id="giftBtn" type="button" class="form-control btn btn-default">提交信息</button>
+                           <h4 id="giftMsg"></h4>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- /.modal-content -->
+               </div>
+               <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+         </div>
+      </div>
+   </div>
+</div>
+<div id="services" class="services">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-md-offset-4 text-center">
+            <h3>鹊桥客照</h3>
+            <hr>
+         </div>
+      </div>
+      <div class="row customer">
+
+      </div>
+   </div>
+</div>
+<!-- /Services -->
+<div id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>客户留言</h2>
+            <hr>
+         </div>
+         <div class="col-md-5 col-md-offset-3">
+            <!-- contact form starts -->
+            <!--id="contact-form"-->
+            <form action="contact" class="form-horizontal">
+               <fieldset>
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="name">顾客姓名</label>
+
+                     <div class="col-sm-8">
+                        <input type="text" placeholder="顾客姓名" class="form-control" name="name" id="name">
+                        <h4 id="msgName" style="color:#f00"></h4>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="email">顾客邮箱</label>
+
+                     <div class="col-sm-8">
+                        <input type="text" placeholder="顾客邮箱" class="form-control" name="email"
+                               id="email">
+                        <h4 id="msgEmail" style="color:#f00"></h4>
+                     </div>
+                  </div>
+                  <!--<div class="form-group">-->
+                     <!--<label class="col-sm-4 control-label" for="InputFile">上传照片</label>-->
+                     <!--<div class="col-sm-8">-->
+                        <!--<input type="file" id="InputFile">-->
+                     <!--</div>-->
+                  <!--</div>-->
+                  <div class="form-group">
+                     <label class="col-sm-4 control-label" for="message">顾客留言</label>
+                     <div class="col-sm-8">
+                        <textarea placeholder="请留下您对我们的评价" class="form-control" name="message"
+                                  id="message" rows="3"></textarea>
+                        <h4 id="msgWords" style="color:#f00"></h4>
+                     </div>
+                  </div>
+                  <div id="bottomBtn" class="col-sm-offset-4 col-sm-8">
+                     <button id="customerBtn" type="button" class="btn btn-success">提交</button>
+                     <button type="reset" class="btn btn-primary">重填</button>
+                     <button id="search" type="button" class="btn btn-info">查看留言</button>
+                     <button id="newSearch" type="button" class="btn btn-info">收起留言</button>
+                     <h4 id="customerMsg"></h4>
+                  </div>
+               </fieldset>
+            </form>
+
+            <!-- contact form ends -->
+         </div>
+      </div>
+   </div>
+</div>
+<div id="searchMsg">
+   <div class="container">
+
+   </div>
+</div>
+
+<div id="fixed">
+   <a href="#top">
+      <i class="glyphicon glyphicon-headphones fix-img"></i>
+      <b></b>
+      <p>在线咨询</p>
+   </a>
+   <div>
+      <i class="glyphicon glyphicon-phone-alt fix-img"></i>
+      <b>010-11111111</b>
+      <p>联系我们</p>
+   </div>
+   <div>
+      <i class="glyphicon glyphicon-qrcode fix-img"></i>
+      <b><img src="img/others/weixin.jpg"></b>
+      <p>请关注我</p>
+   </div>
+   <a href="#top">
+      <i class="glyphicon glyphicon-hand-up fix-img"></i>
+      <b></b>
+      <p>Top</p>
+   </a>
+</div>
+
+<!-- Footer -->
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 col-md-offset-3 text-center">
+            <em>北京相约鹊桥婚纱摄影 &copy; queqiao 2015,最终解释权归相约鹊桥所有</em>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- /Footer -->
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.vegas.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery-scrolltofixed-min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script src="js/home.js"></script>
+<script src="js/node.js"></script>
+
+
+
+
+
+<!-- Slideshow Background  -->
+
+
+<script>
+
+</script>
+<!-- /Navbar-->
+
+</body>
+
+</html>

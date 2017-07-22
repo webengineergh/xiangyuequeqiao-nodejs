@@ -1,0 +1,23 @@
+{
+  "name": "kangqiao",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "sae",
+    "email": "saemail@sina.cn"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "querystring": "^6.4.0",
+    "qs": "^6.4.0"
+  },
+  "engines": {
+    "node": "4.4.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC"
+}
